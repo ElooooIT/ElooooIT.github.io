@@ -1,4 +1,29 @@
-<p>Dear visitor,</br>
+<head>
+<script type="text/javascript">
+    
+    // Total seconds to wait
+    var seconds = 10;
+    
+    function countdown() {
+        seconds = seconds - 1;
+        if (seconds < 0) {
+            // Chnage your redirection link here
+            window.location = "https://duckdev.com";
+        } else {
+            // Update remaining seconds
+            document.getElementById("countdown").innerHTML = seconds;
+            // Count down using javascript
+            window.setTimeout("countdown()", 1000);
+        }
+    }
+    
+    // Run countdown function
+    countdown();
+    
+</script>
+</head>
+
+<body><h2>Dear visitor,</br>
 the ElooooIT team is currently working on a new Webpage.</br>
 We thank you for your patience and understanding.</br>
 </br>
@@ -7,4 +32,7 @@ via our LinkedIn profile on:</br>
 <a href="https://www.linkedin.com/company/eloooo-it">https://www.linkedin.com/company/eloooo-it</a></br>
 </br>
 Thank you and have a nice day!</br>
-Your ElooooIT team</p>
+Your ElooooIT team</h2>
+
+<h3>Automatically redirecting to LinkedIn in <span id="countdown">10</span> seconds</h3>
+</body>
